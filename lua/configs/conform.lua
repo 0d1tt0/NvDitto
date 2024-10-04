@@ -10,6 +10,7 @@ local options = {
 		lsp_fallback = true,
 	},
 	formatters = {
+		-- black is mean so we need to prepend with --fast
 		black = {
 			prepend_args = { "--fast" },
 		},
@@ -17,4 +18,3 @@ local options = {
 }
 
 return options
-
