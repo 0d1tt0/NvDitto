@@ -41,3 +41,10 @@ map("n", "<leader>fl", "<cmd>Telescope lsp_code_actions<CR>", { desc = "Code Act
 map("n", "<leader>fm", function()
     require("conform").format { lsp_fallback = true }
 end, { desc = "General Format file" })
+
+-- BarBar (buffers)
+-- Move to previous/next
+map("n", "<S-tab>", "<Cmd>BufferPrevious<CR>", { desc = "Go to previous buffer" })
+map("n", "<tab>", "<Cmd>BufferNext<CR>", { desc = "Go to next buffer" })
+-- delete buffer
+map("n", "<leader>x", "<Cmd>BufferClose<CR>", { desc = "Close buffer" })
