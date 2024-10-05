@@ -10,7 +10,8 @@ return {
     -- other stuff
 
     -- theme
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    "rmehri01/onenord.nvim",
     { "nvim-lua/plenary.nvim" },
     {
         "windwp/nvim-autopairs",

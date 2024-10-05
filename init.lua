@@ -68,6 +68,16 @@ require("lualine").setup() -- statusline
 
 require("barbar").setup() -- barbar
 
-vim.cmd.colorscheme "catppuccin-mocha" -- colorscheme
+-- stylua: ignore
+-- i love onenord but the default comments are too dark
+-- which is what the `custom_highlights` is for 
+require("onenord").setup {
+    custom_highlights = {
+		Comment = { style = 'italic', fg = "#9f9f9f" },
+		["@comment"] = { style = 'italic', fg = "#9f9f9f" },
+    }
+} -- onenord
+-- vim.cmd.colorscheme "catppuccin-mocha" -- colorscheme
+
 require "mappings" -- personal mappings
 require "options" -- personal options
