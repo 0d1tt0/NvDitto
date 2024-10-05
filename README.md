@@ -10,7 +10,8 @@ I do about 50/50 coding/writing markdown, so this config is simple enough for me
     - this includes [mason.nvim](https://github.com/williamboman/mason.nvim) and other abstractions to make it easy to interact with the nvim lsp.
 - Catppuccin Frappe theme -- this may change frequently
 - [conform.nvim](https://github.com/stevearc/conform.nvim) - Formatting
-- [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
-- [lualine](https://github.com/nvim-lualine/lualine.nvim)
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
     - with the evil_lualine theme
+- [barbar.nvim](https://github.com/https://github.com/romgrk/barbar.nvim)
 
