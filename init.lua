@@ -68,6 +68,6 @@ require("lualine").setup() -- statusline
 
 require("barbar").setup() -- barbar
 
-vim.cmd.colorscheme "catppuccin-frappe" -- colorscheme
+vim.cmd.colorscheme "catppuccin-mocha" -- colorscheme
 require "mappings" -- personal mappings
 require "options" -- personal options
