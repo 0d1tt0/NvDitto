@@ -37,13 +37,7 @@ map("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<CR>", { desc = "Docu
 map("n", "<leader>fw", "<cmd>Telescope lsp_workspace_symbols<CR>", { desc = "Workspace Symbols" })
 map("n", "<leader>fl", "<cmd>Telescope lsp_code_actions<CR>", { desc = "Code Actions" })
 
--- LSP
--- map("n", "<leader>ds", vim.diagnostic.setloclist, { desc = "LSP Diagnostic loclist" })
--- map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
--- map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
--- map("n", "gi", vim.lsp.buf.implementation, { desc = "Go to implementation" })
-
 -- Formatting
 map("n", "<leader>fm", function()
-  require("conform").format { lsp_fallback = true }
+    require("conform").format { lsp_fallback = true }
 end, { desc = "General Format file" })
