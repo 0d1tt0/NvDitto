@@ -57,27 +57,24 @@ cmp.setup {
     },
     snippet = {
         expand = function(args)
-            -- You need Neovim v0.10 to use vim.snippet
-            vim.snippet.expand(args.body)
+            require("luasnip").lsp_expand(args.body)
         end,
     },
     mapping = cmp.mapping.preset.insert {},
 }
 
-require("lualine").setup() -- statusline
-
-require("barbar").setup() -- barbar
-
--- stylua: ignore
 -- i love onenord but the default comments are too dark
--- which is what the `custom_highlights` is for 
+-- which is what the `custom_highlights` is for
 require("onenord").setup {
     custom_highlights = {
-		Comment = { style = 'italic', fg = "#9f9f9f" },
-		["@comment"] = { style = 'italic', fg = "#9f9f9f" },
-    }
-} -- onenord
--- vim.cmd.colorscheme "catppuccin-mocha" -- colorscheme
+        Comment = { style = "italic", fg = "#9f9f9f" },
+        ["@comment"] = { style = "italic", fg = "#9f9f9f" },
+    },
+}
+
+require("gitsigns").setup()
+require("lualine").setup() -- statusline
+require("barbar").setup() -- barbar
 
 require "mappings" -- personal mappings
 require "options" -- personal options
