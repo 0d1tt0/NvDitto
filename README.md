@@ -14,4 +14,5 @@ I do about 50/50 coding/writing markdown, so this config is simple enough for me
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
     - with the evil_lualine theme
 - [barbar.nvim](https://github.com/romgrk/barbar.nvim)
+- [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 
